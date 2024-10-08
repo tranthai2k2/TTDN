@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <link
       rel="icon"
       type="image/x-icon"
@@ -213,10 +214,54 @@
       </div>
       <div class="box-style-4">
         <h2>E-Magazine</h2>
-        
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide"> 
+              <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="E-Magazine 1"> 
+            </div>
+            <div class="slide"> 
+              <img src="https://i.pinimg.com/originals/56/d9/30/56d930d09098fc05aeccc931d9506ac8.jpg" alt="E-Magazine 2"> 
+            </div>
+            <div class="slide"> 
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNEUOjPor-Nze2gA0Vcbf0YIcy3WLkrob4P3z2Ji3kcOPV12vN9zkASKYzjHcACb10veo&usqp=CAU" alt="E-Magazine 3"> 
+            </div>
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
+        
+      </div>
+      
+      <div class="box-style-4">
+        
+        <h2>all-news</h2>
+        <div class="news-container"></div> <!-- Nơi để đổ thông tin tin tức -->
+        <button class="clickhere"  onclick="clickhere()">click here</button>
+        <div class="phantrang" style="display: none;">
+          
+            <button class="prev-1" onclick="movePage(-1)" >&#10094;</button>
+            <p class="current"></p>
+            <button class="next-2" onclick="movePage(1)" >&#10095;</button>
+        </div>
+    </div>
+    
+        
+      
+
+
+
+        <div class="footer"> 
+          <div> 
+            <p>Tổng Biên tập: Lê Quốc Minh</p> 
+            <p>Trụ sở chính: 71 Hàng Trống - Hà Nội.</p> 
+            <p>Tel: (84) 24 382 54231/382 54232 Fax: (84) 24 382 55593.</p> 
+            <p>E-mail: <a href="mailto:nhandandientu@nhandan.vn">nhandandientu@nhandan.vn</a></p> 
+          </div> 
+        </div>
+        
         
       </div>
     </div>
   </body>
 </html>
+npx create-reactapp
